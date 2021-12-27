@@ -3,37 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
     <title>Yale Art</title>
 </head>
 <body>
-    <div class="home">
-       <div class="nav">
-           <div class="logoimg">
-            <a  href="" ><img src="Images/logo.png" alt="">
-            </div>
-            <div class="logotext"><a href="">Yale School of Art</a></div>
-            <div class="links"> 
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Academics</a>
-                    <div class="dropdown-content">
-                      <a href="#">Fine Arts</a>
-                      <a href="#">Illustration</a>
-                      <a href="#">Enviourment Design</a>
-                      <a href="#">Filmography</a>
-                      <a href="#">Photography</a>
-                    </div>
-                  </li> 
-            <li><a href="">Student Gallery</a></li>
-            <li><a href="">Admission</a></li>
-            <li><a href="">Apply</a></li>
-            <li><a href="">About</a></li>
-            <div class="search"> <a href=""><img src="Images/search.png" alt=""></a></div>
-           </div>
+    <div class="nav">
+        
+        <div class="logoimg">
+         <a  href="#homelink" style="border-bottom: 0px;" ><img src="Images/logo.png" alt="">
+         </div>
+         <div class="logotext"><a href="#homelink" style="border-bottom: 0px;">Yale School of Art</a></div>
+
+         <div class="links"> 
+            <ul>
+             <li class="dropdown">
+                 <a href="javascript:void(0)" class="dropbtn">Programs</a>
+                 <div class="dropdown-content">
+                   <a class="dropitem"href="#s0">Illustration</a>
+                   <a class="dropitem"href="#s0">Enviourment Design</a>
+                   <a class="dropitem"href="#s0">Photography</a>
+                 </div>
+               </li> 
+         <li><a href="#a1">Academics</a></li>
+         <li><a href="#a2">Apply</a></li>
+         <li><a href="#a3">About</a></li>
+         <li class="search"><a href=""><img src="Images/search.png" alt=""></a></li>
+        </ul>
+        </div>
+     </div> 
+    <div class="home" id="homelink">
         <div class="content">
             <div class="hometext">
                 <h1>Welcome,</h1>  
@@ -42,13 +46,167 @@
                     The Yale School of Art is a graduate school that confers MFAs in Graphic Design, Painting/Printmaking, Photography, and Sculpture; and offers undergraduate-level art courses to Yale College students. Our website exists as an ongoing collaborative experiment in digital publishing and information sharing. It functions as a wiki—all members of the School of Art community have the ability to add new, and edit most existing content.
                 </span>
             </div>
-            <button class="btn">Learn more about Yale</button>
+            <button class="btn"><a href="#a3" style="border-bottom: 0px;">Learn more about Yale</a></button>
         </div>
-       </div> 
+       
     </div>
     <div class="academics">
-            
+            <div class="academicsimage" id="a1">
+                <h1 class="academicstitle">Academics at YaleArt</h1>
             </div>
+            <div class="academicstext">
+                <div class="academicinfo">
+                    <h3>At YaleArt, we’re not anticipating the future. We’re creating it.</h3>
+                <br>
+                <span>Yale students go beyond aesthetics and technical expertise to think critically, intelligently and 
+                    humanely about their practice and its effects on others. Our undergraduate, graduate and Public Programs 
+                    all remarkably diverse in their areas of emphasis, methods of teaching and curricula stress this core 
+                    sensibility while pushing students to create meaningful work.       </span>
+                </div> 
+                <div class="related">
+                    <h4>Related Links:</h4>
+                    <div class="relatedlink">
+                        <li class="rlink"><a href=""><em>Student Gallery</em></a></li>
+                        <li class="rlink"><a href=""><em>Happening this week</em></a></li>
+                        <li class="rlink"><a href=""><em>View Academic Callender</em></a></li>
+                    </div>
+                </div>
+            </div>
+            <hr>
     </div>
+    <div class="programs">
+        <div class="programheader" id="s0"></div>
+        <div class="programtitle">
+        <h2>Undergraduate Degrees</h2>
+        <span>YaleArt offers 6 undergraduate degrees equipping students with the latest tools and techniques necessary to thrive in today’s creative landscape.</span>
+        </div>
+        <div class="subjects">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" id="s1" >
+                    <img  class="d-block w-100" src="Images/C1.png" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Illustration</h5>
+                        <p>Combine drawing, painting and design to tell stories convey
+                            ideas or create imagery for commercial applications and 
+                            clients.</p>
+                      </div>
+                </div>
+                  <div class="carousel-item" id="s2">
+                    <img class="d-block w-100" src="Images/C2.png" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Enviourment Design</h5>
+                        <p>Bring stories to life for the entertainment industry through the
+                            design of novel characters and worlds.</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item" id="s3">
+                    <img class="d-block w-100" src="Images/C3.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Photography</h5>
+                        <p>Master the art of creating resonant photographic images for 
+                            a world with an insatiable need to be informed and engaged 
+                            by visual storytelling.</p>
+                      </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"  style="border-bottom: 0px;">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="border-bottom: 0px;">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </div>
+    <div class="apply" id="a2">
+        <div class="applyimage">
+            <h1 class="academicstitle">Apply to YaleArt</h1>
+        </div>
+        <div class="academicstext">
+            <div class="academicinfo">
+                <h3>We believe there is a right college for each art and design student a place <br> that provides the right kind of education and support for you as a creative individual.</h3>
+            <br>
+            <span>If you think YaleArt is a good match, first take a moment to review how to apply for both undergraduate and graduate majors.
+
+                When you're ready, our Admissions counselors—practicing artists themselves—are here to guide you through the application process, discuss our portfolio requirements, answer your questions and serve as your Admissions mentors. </span>
+            </div> 
+            <div class="applybox">
+                <div class="applycontent">
+                    <br> <br> <br> <br> 
+                    <h4>Talk to an Admissions counselor.</h4>
+                    <span class="applytext">We’re here to answer your questions and serve as your mentors through the application process.</span> <br> <br>
+                    <button class="applybtn">Learn more about Yale</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="a3">
+        <div class="aboutimage">
+            <div class="abouttitle">
+                <h2>Take the next step toward a career in art and design.</h2>
+                <ul>
+                    <li> <button class="aboutbtn">Learn more about Yale</button></li>
+                    <li> <button class="aboutbtn">Learn more about Yale</button></li>
+                    <li> <button class="aboutappybtn">Learn more about Yale</button></li>
+                </ul>
+                </div>
+        </div>
+        <div class="contactus">
+                 <div class="footerlogo">
+                    <ul>
+                        <li><img src="Images/logo.png" alt=""></li>
+                        <li><a href="#homelink" style="border-bottom: 0px;"><h3>Yale School of Art</h3></a></li>
+                    </ul>
+                 </div>
+            <ul class="footerinfo">
+                <li class="endli"> <p> Yale School of Art <br>
+                    1156 Chapel Street <br>
+ <br><br>
+                    POB 208339 <br>
+                    New Haven, Connecticut
+<br><br>
+                    06520-8339 <br> </p>
+                </li>
+                <li class="endli"> <p> This website exists as an  <br>
+                    ongoing collaborative <br>
+                    experiment in digital publishing <br>
+                    and information sharing. <br>
+                    <br>
+                    Because this website <br>
+                    functions as a wiki, all members <br>
+                    of the School of Art community <br>   </p>                   
+                    </li>
+                    <li class="endli">
+                        <h3>Follow YaleArt:</h3>
+                        <div class="social-links">
+                            <a href="" class="icon" style="border-bottom: 0px;"><img src="images/logo1.png" alt=""></a>
+                            <a href="" class="icon" style="border-bottom: 0px;" ><img src="images/logo2.png" alt=""></a> 
+                            <a href="" class="icon" style="border-bottom: 0px;"><img src="images/logo3.png" alt=""></a> 
+                            <a href="" class="icon" style="border-bottom: 0px;"><img src="images/logo4.png" alt=""></a> 
+                            <a href="" class="icon" style="border-bottom: 0px;"><img src="images/logo5.png" alt=""></a>
+                        </div>
+                        <div class="social-contact">
+                            <a href="" class="endlink" ><p>Contacts</p></a>
+                            <a href="" class="endlink" ><p>Calender</p></a> 
+                            <a href="" class="endlink" ><p>Recruitment</p></a> 
+                            <a href="" class="endlink" ><p>Alumni</p></a> 
+                        </div>
+                        
+
+                </li>
+            </ul>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
